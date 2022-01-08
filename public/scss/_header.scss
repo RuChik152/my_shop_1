@@ -113,3 +113,11 @@ tbody {
     border: none;
     cursor: pointer;
 }
+
+.box__filter{
+    display: flex;
+    .search_input {
+        outline: none;
+        padding: 1px 4px;
+    }
+}

@@ -175,6 +175,15 @@ tbody {
   cursor: pointer;
 }
 
+.box__filter {
+  display: flex;
+}
+
+.box__filter .search_input {
+  outline: none;
+  padding: 1px 4px;
+}
+
 .brand {
   display: flex;
   justify-content: space-evenly;
