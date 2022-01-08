@@ -51,8 +51,8 @@ Vue.component('headers', {
                     <div class="navbar__box">
                     
                         <a class="navbar__box__logo navbar__box__item" href="index.html"><img src="img/logo.png" alt="logo"></a>
-                        <form action="/" @submit.prevent="$parent.filterProduct">
-                            <input type="text" class="search_input" v-model="$parent.userSerach">
+                        <form action="/" @submit.prevent="$root.$refs.market.fiterUserProduct(userSerach)">
+                            <input type="text" class="search_input" v-model="userSerach">
                             <button type="submit" class="search_button"><img src="img/search.png" alt="search"></button>
                         </form>                     
                     </div>

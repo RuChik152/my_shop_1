@@ -44,10 +44,6 @@ const app = new Vue({
             }
             // body: JSON.stringify(data)
          }).then(result => result.json());
-      },
-      filterProduct(){
-         let regexp = new RegExp(this.userSerach, 'i');
-         this.product = this.filters.filter(item => regexp.test(item.product_name));
       }
    },
    mounted(){
