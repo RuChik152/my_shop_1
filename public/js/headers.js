@@ -7,7 +7,7 @@ Vue.component('headers', {
       addToCart(item){
          let change = this.usercart.find(el => el.id === item.id);
          if(change){
-            this.$parent.putJson(`/api/postProduct/${change.id}`, {quantity: 1}).then(data => {
+            this.$parent.putJson(`/api/cart/${change.id}`, {quantity: 1}).then(data => {
                if(data.result === 1){
                   change.quantity++;
                }
@@ -15,7 +15,7 @@ Vue.component('headers', {
 
          } else {
             let prod = Object.assign( {quantity: 1}, item);
-            this.$parent.postJson('/api/postProduct', prod).then(data => {
+            this.$parent.postJson('/api/cart/', prod).then(data => {
                if(data.result === 1) {
                   this.usercart.push(prod);
                }
@@ -24,7 +24,7 @@ Vue.component('headers', {
       },
       removeBasket(item){
          let change = this.usercart.find(el => el.id === item.id);
-         this.$parent.deletJson(`/api/deleteProduct/${change.id}`).then(data => {
+         this.$parent.deletJson(`/api/cart/${change.id}`).then(data => {
             if(data.result === 1){
                this.usercart = data.usercart;
             }
@@ -39,7 +39,7 @@ Vue.component('headers', {
      }
    },
    mounted(){
-     this.$parent.getJson('/api/getCart').then(data => {
+     this.$parent.getJson('/api/cart').then(data => {
         for (let item of data){
            this.usercart.push(item);
         }
@@ -59,7 +59,7 @@ Vue.component('headers', {
                     <div class="navbar__box">
                         <btn-menu @menu="menu"></btn-menu>
                         <a class="header__box__profile" href="registration.html"><img src="img/profile.png" alt="profile"></a>
-                        <basket @remove="removeBasket" :isshow="isshow" :cart="usercart"></basket>
+                        <basket @remove="removeBasket" :isshow="isshow" :cart="usercart" @show="showCart"></basket>
                         <a class="header__box__basket" href="#" data-basket="0" @click.prevent="showCart"><img src="img/basket.png" alt="basket"></a>
                     </div>
                 </div>
@@ -72,7 +72,15 @@ Vue.component('btn-menu', {
 
 Vue.component('basket', {
    props: ['cart', 'isshow'],
-   template: `<div class="info__basket" v-show="isshow">
+   data(){
+     return {
+
+     }
+   },
+   methods: {
+
+   },
+   template: `<div class="info__basket" v-show="isshow" @mouseout.stop="$emit('show')">
                   <div class="cart-item" v-for="item of cart">
                        <p>{{ item.price }}</p>
                        <p>{{ item.product_name }}</p>
