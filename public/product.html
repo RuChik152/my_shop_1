@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>my shop</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header>
+                <div class="navbar container">
+                    <div class="navbar__box">
+                        <a class="navbar__box__logo navbar__box__item" href="index.html"><img src="img/logo.png"
+                                alt="logo"></a>
+                        <a class="navbar__box__search" href="#"><img src="img/search.png" alt="search"></a>
+                    </div>
+                    <div class="navbar__box">
+                        <button class="header__box__button" type="submit"><img src="img/button.png" alt="button"
+                                onclick="showmenu();"></button>
+                        <a class="header__box__profile" href="registration.html"><img src="img/profile.png"
+                                alt="profile"></a>
+                        <a class="header__box__basket" href="#"><img src="img/basket.png" alt="basket"></a>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="top__box">
+                    <div class="top__box__product container-lg">
+                        <div class="top__box__item">
+                            <h1 class="top__box__title">new arrivals</h1>
+                        </div>
+                        <div class="crumbs">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">men</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">new arrivals </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item border border-1 active">
+                            <img class="img-fluid mx-auto d-block" src="img/carusel/wumen_carusel.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item border border-1">
+                            <img class="img-fluid mx-auto d-block" src="img/carusel/wumen_carusel.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item border border-1">
+                            <img class="img-fluid mx-auto d-block" src="img/carusel/wumen_carusel.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+                <div class="container-lg border border-1 product d-flex flex-column align-items-center">
+                    <h2 class="product__title">women collection</h2>
+                    <hr class="product__hr__main">
+                    <h3 class="product__subtitle">moschino cheap and chic</h3>
+                    <p class="product__desc">
+                        compellingly actualize fully researched processes before proactive outsourcing. progressively
+                        syndicate collaborative architectures before cutting-edge services. completely visualize
+                        parallel core competencies rather than exceptional portals.
+                    </p>
+                    <p class="product__price">$561</p>
+                    <hr class="product__hr__sec">
+                    <div class="product_options">
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle product__button" type="button" id="dropdownmenubutton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                choose color
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownmenubutton">
+                                <li><a class="dropdown-item" href="#">menu item</a></li>
+                                <li><a class="dropdown-item" href="#">menu item</a></li>
+                                <li><a class="dropdown-item" href="#">menu item</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle product__button" type="button" id="dropdownmenubutton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                choose size
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownmenubutton">
+                                <li><a class="dropdown-item" href="#">menu item</a></li>
+                                <li><a class="dropdown-item" href="#">menu item</a></li>
+                                <li><a class="dropdown-item" href="#">menu item</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle product__button" type="button" id="dropdownmenubutton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                quantity
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary product__secbutton">Add to Cart</button>
+                </div>
+                <ul class="market__product container-lg">
+                    <li class="market__product__item">
+                        <a class="product__item" href="#">
+                            <img class="product__item__img" src="img/jacket.jpg" alt="jacket">
+                        </a>
+                        <div class="market__product__box">
+                            <a href="#">
+                                <h2 class="product__item__title">ellery x m'o capsule</h2>
+                            </a>
+                            <p class="product__item__desc">Known for her sculptural takes on traditional tailoring,
+                                australian arbiter of cool
+                                kym
+                                ellery
+                                teams up with moda operandi.</p>
+                            <p class="product__item__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="market__product__item">
+                        <a class="product__item" href="#">
+                            <img class="product__item__img" src="img/the_dress.jpg" alt="the_dress">
+                        </a>
+                        <div class="market__product__box">
+                            <a href="#">
+                                <h2 class="product__item__title">ellery x m'o capsule</h2>
+                            </a>
+                            <p class="product__item__desc">Known for her sculptural takes on traditional tailoring,
+                                australian arbiter of cool
+                                kym
+                                ellery
+                                teams up with moda operandi.</p>
+                            <p class="product__item__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="market__product__item">
+                        <a class="product__item" href="#">
+                            <img class="product__item__img" src="img/blouse.jpg" alt="blouse">
+                        </a>
+                        <div class="market__product__box">
+                            <a href="#">
+                                <h2 class="product__item__title">ellery x m'o capsule</h2>
+                            </a>
+                            <p class="product__item__desc">Known for her sculptural takes on traditional tailoring,
+                                australian arbiter of cool
+                                kym
+                                ellery
+                                teams up with moda operandi.</p>
+                            <p class="product__item__price">$52.00</p>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <footer class="footer">
+            <section class="footer__feedback">
+                <div class="footer__feedback__box container">
+                    <div class="feedback__box__item women">
+                        <img class="feedback__box__img" src="img/woomen.png" alt="woomen">
+                        <p class="feedback__box__text">“vestibulum quis porttitor dui! quisque viverra nunc mi, a
+                            pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="feedback__box__item">
+                        <h2 class="feedback__box__title">subscribe</h2>
+                        <p class="feedback__box__desc">for our newletter and promotion</p>
+                        <form>
+                            <input class="feedback__box__email" type="email" placeholder="enter yor email">
+                            <input class="feedback__box__button" type="submit" value="subscribe">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__social">
+                <div class="footer__social__item container">
+                    <p class="social__item__copy">&copy; 2021 brand all rights reserved</p>
+                    <div class="social__box">
+                        <ul>
+                            <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="img/instagram.svg" alt="instagram"></a></li>
+                            <li><a href="#"><img src="img/no_name.svg" alt="no_name"></a></li>
+                            <li><a href="#"><img src="img/twitter.svg" alt="twiter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

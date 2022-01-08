@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>my shop</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header>
+                <div class="navbar container">
+                    <div class="navbar__box">
+                        <a class="navbar__box__logo navbar__box__item" href="index.html"><img src="img/logo.png"
+                                alt="logo"></a>
+                        <a class="navbar__box__search" href="#"><img src="img/search.png" alt="search"></a>
+                    </div>
+                    <div class="navbar__box">
+                        <button class="header__box__button" type="submit"><img src="img/button.png" alt="button"
+                                onclick="showmenu();"></button>
+                        <a class="header__box__profile" href="registration.html"><img src="img/profile.png"
+                                alt="profile"></a>
+                        <a class="header__box__basket" href="#"><img src="img/basket.png" alt="basket"></a>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="top__box">
+                    <div class="container">
+                        <h1 class="top__box__title">shopping cart</h1>
+                    </div>
+                </section>
+                <section class="basket container">
+                    <div class="basket__list">
+                        <div class="basket__list__item ">
+                            <img class="basket__item__img" src="img/blouse_men.png" alt="blose">
+                            <button class="basket__item__close"></button>
+                            <div class="basket__item__box">
+                                <h2 class="basket__item__title">mango people</h2>
+                                <h3 class="basket__item__desc">t-shirt</h3>
+                                <div class="basket__item__data">
+                                    <p class="item__data">price:<span class="data__value data__price-value">$300</span>
+                                    </p>
+                                    <p class="item__data">color:<span class="data__value data__color-value">red</span>
+                                    </p>
+                                    <p class="item__data">size:<span class="data__value data__size-value">xl</span></p>
+                                    <p class="item__data">quantity:<input type="text"
+                                            class="data__value data__quantity-value" value="2"> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket__list__item ">
+                            <img class="basket__item__img" src="img/blouse_men_2.png" alt="blose">
+                            <button class="basket__item__close"></button>
+                            <div class="basket__item__box">
+                                <h2 class="basket__item__title">mango people</h2>
+                                <h3 class="basket__item__desc">t-shirt</h3>
+                                <div class="basket__item__data">
+                                    <p class="item__data">price:<span class="data__value data__price-value">$300</span>
+                                    </p>
+                                    <p class="item__data">color:<span class="data__value data__color-value">red</span>
+                                    </p>
+                                    <p class="item__data">size:<span class="data__value data__size-value">xl</span></p>
+                                    <p class="item__data">quantity:<input type="text"
+                                            class="data__value data__quantity-value" value="2"> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket__list__btn">
+                            <button class="list__btn btn__clear" type="submit">clear shopping cart</button>
+                            <button class="list__btn btn__continue" type="submit">continue shopping</button>
+                        </div>
+                    </div>
+                    <div class="basket__data">
+                        <fieldset class="delivery">
+                            <legend class="delivery__legend">shipping adress</legend>
+                            <input class="delivery__input" type="text" placeholder="country" name="country">
+                            <input class="delivery__input" type="text" placeholder="state" name="state">
+                            <input class="delivery__input" type="text" placeholder="postcode / zip" name="zip">
+                            <button class="delivery__button" type="submit">get a quote</button>
+                        </fieldset>
+                        <div class="registration">
+                            <div class="registration__total">
+                                <h4 class="registration__total__sub">sub total<span
+                                        class="total_value total__sub-value">$900</span></h4>
+                                <h5 class="registration__total__grand">grand total<span
+                                        class="total_value total__grand-value">$900</span></h5>
+                            </div>
+                            <hr class="registration__hr">
+                            <button class="registration__button" type="submit">proceed to checkout</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <section class="footer__feedback">
+                <div class="footer__feedback__box container">
+                    <div class="feedback__box__item women">
+                        <img class="feedback__box__img" src="img/woomen.png" alt="woomen">
+                        <p class="feedback__box__text">“vestibulum quis porttitor dui! quisque viverra nunc mi, a
+                            pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="feedback__box__item">
+                        <h2 class="feedback__box__title">subscribe</h2>
+                        <p class="feedback__box__desc">for our newletter and promotion</p>
+                        <form>
+                            <input class="feedback__box__email" type="email" placeholder="enter yor email">
+                            <input class="feedback__box__button" type="submit" value="subscribe">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__social">
+                <div class="footer__social__item container">
+                    <p class="social__item__copy">&copy; 2021 brand all rights reserved</p>
+                    <div class="social__box">
+                        <ul>
+                            <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="img/instagram.svg" alt="instagram"></a></li>
+                            <li><a href="#"><img src="img/no_name.svg" alt="no_name"></a></li>
+                            <li><a href="#"><img src="img/twitter.svg" alt="twiter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

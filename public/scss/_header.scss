@@ -1,0 +1,112 @@
+header {
+    background-color: $colorBlack;
+    .navbar {
+        @include tablet {
+            padding: 18px 32px;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+        position: relative;
+        .navbar__box {
+            display: flex;
+            position: relative;
+            .navbar__box__logo {
+                margin-right: 41px;
+                img {
+                    width: 44px;
+                }
+            }
+            .navbar__box__search {
+                img {
+                    width: 26px;
+                }
+            }
+
+            .header__box__button {
+                background-color: $colorBlack;
+                border: none;
+                cursor: pointer;
+            }
+            .header__box__button,
+            .header__box__profile,
+            .header__box__basket {
+                margin-left: 33px;
+                img {
+                    width: 30px;
+                }
+            }
+
+            .header__box__profile {
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            .header__box__basket {
+                position: relative;
+                @include mobile {
+                    display: none;
+                }
+                &::before {
+                    position: absolute;
+                    content: attr(data-basket);
+                    color: rgb(255, 255, 255);
+                    top: -26px;
+                    right: -20px;
+                    background-color: red;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .info__basket {
+                //display: none;
+                position: absolute;
+                width: 78vh;
+                height: fit-content;
+                background-color: #dedede;
+                top: 38px;
+                right: 21px;
+                border-radius: 7px;
+                padding: 18px;
+                .basket__count__product {
+                    width: 30px;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 18px;
+                    outline: none;
+                }
+                table {
+                    border-spacing: 20px;
+                    border-collapse: inherit;
+                    text-align: center;
+                }
+                .info__basket__summ {
+                    display: flex;
+                }
+                hr {
+                    width: 80%;
+                    border: 1px solid black;
+                }
+            }
+            .info__basket-active {
+                display: block;
+            }
+        }
+    }
+}
+
+tbody {
+    border-spacing: 10px;
+}
+
+.search_button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}

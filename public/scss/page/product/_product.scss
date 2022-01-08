@@ -1,0 +1,119 @@
+.product {
+    padding: 60px 0px;
+    margin-top: -52px;
+    position: relative;
+    background: white;
+}
+
+.product__hr__main {
+    width: 65px;
+    border: 1px solid #ef5b70;
+}
+
+.product__title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f16d7f;
+    text-transform: uppercase;
+}
+
+.product__subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.product__desc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5e5e5e;
+    width: 49%;
+    margin-bottom: 32px;
+    &::first-letter {
+        text-transform: capitalize;
+    }
+}
+
+.product__price {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ef5b70;
+}
+
+.product__hr__sec {
+    border: 1px solid #b4b4b4;
+    width: 59%;
+    margin: 64px 0px;
+}
+
+.product__button {
+    background: none;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    text-transform: uppercase;
+    box-shadow: none !important;
+    @include mobile {
+        font-size: 10px;
+    }
+}
+
+.product__secbutton {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f26376;
+    border-radius: 0px;
+    border: 1px solid #f26376;
+    padding: 15px 57px 15px 73px;
+    position: relative;
+    box-shadow: none !important;
+    &::after {
+        position: absolute;
+        content: url(../img/add_to_cart.svg);
+        width: 50px;
+        top: 11px;
+        left: 11px;
+    }
+    &:hover {
+        background: none;
+        color: #f26376;
+        border: 1px solid #f26376;
+    }
+
+}
+
+.product_options {
+    margin-bottom: 48px;
+}
+
+.top__box__product {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.crumbs {
+    display: flex;
+    width: fit-content;
+    a {
+        color: #f38191;
+    }
+}

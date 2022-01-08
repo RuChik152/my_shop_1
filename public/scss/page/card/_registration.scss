@@ -1,0 +1,65 @@
+.registration {
+    margin-top: 57px;
+    background: #f5f3f3;
+    padding: 19px 43px 42px 43px;
+    @include tablet {
+        margin-top: 39px;
+        height: fit-content;
+    }
+}
+
+.registration__total {
+    text-align: end;
+    .total_value {
+        margin-left: 20px;
+    }
+    .registration__total__sub {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4a4a4a;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .registration__total__grand {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        text-transform: uppercase;
+        margin-right: 4px;
+        margin-bottom: 21px;
+        .total__grand-value {
+            color: $colorPink;
+            font-weight: 700;
+        }
+    }
+}
+
+.registration__hr {
+    border: 1px solid #e2e2e2;
+}
+
+.registration__button {
+    padding: 15px 42px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: none;
+    background-color: $colorPink;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    margin-top: 17px;
+    transition: 0.4s ease;
+    &:hover {
+        background-color: #b35461;
+        box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.24);
+    }
+    &:active {
+        background-color: #8a404a;
+    }
+}

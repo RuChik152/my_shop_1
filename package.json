@@ -1,0 +1,23 @@
+{
+  "name": "less1copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuChik152/shop_GU_web_1708.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RuChik152/shop_GU_web_1708/issues"
+  },
+  "homepage": "https://github.com/RuChik152/shop_GU_web_1708#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

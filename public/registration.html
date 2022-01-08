@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>my shop</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header>
+                <div class="navbar container">
+                    <div class="navbar__box">
+                        <a class="navbar__box__logo navbar__box__item" href="index.html"><img src="img/logo.png" alt="logo"></a>
+                        <a class="navbar__box__search" href="#"><img src="img/search.png" alt="search"></a>
+                    </div>
+                    <div class="navbar__box">
+                        <button class="header__box__button" type="submit"><img src="img/button.png"
+                                alt="button" onclick="showmenu();"></button>
+                        <a class="header__box__profile" href="registration.html"><img src="img/profile.png" alt="profile"></a>
+                        <a class="header__box__basket" href="#"><img src="img/basket.png" alt="basket"></a>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="top__box">
+                    <div class="container">
+                        <h1 class="top__box__title">registration</h1>
+                    </div>
+                </section>
+                <section class="feedback container">
+                    <div class="feedback__form">
+                        <form action="/" method="post">
+                            <fieldset class="feedback__form__name ">
+                                <legend>your name</legend>
+                                <input class="form__name__item" type="text" name="first_name" placeholder="first name">
+                                <input class="form__name__item" type="text" name="last_name" placeholder="last name">
+                            </fieldset>
+                            <div class="feedback__form__gender">
+                                <input class="form__gender__input" type="radio" name="gender" id="gender_male" value="male">
+                                <label class="form__gender__label" for="gender_male">male</label>
+                                <input class="form__gender__input" type="radio" name="gender" id="gender_famale" value="female">
+                                <label class="form__gender__label" for="gender_famale">female</label>
+                            </div>
+                            <fieldset class="feedback__form__data">
+                                <legend>login details</legend>
+                                <input class="form__name__item" type="email" name="email" placeholder="email">
+                                <input class="form__name__item" type="password" name="password" placeholder="password">
+                            </fieldset>
+                            <p class="feedback__form__desc">please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                            <button type="submit" class="feedback__form__button"><span class="feedback__form__button-decorate">join now</span></button>
+                        </form>
+                    </div>
+                    <div class="feedback__loyalty">
+                        <h2 class="feedback__loyalty__title">loyalty has its perks</h2>
+                        <p class="feedback__loyalty__desc">get in on the loyalty program where you can earn points and unlock serious perks. starting with these as soon as you join:</p>
+                        <ul class="feedback__loyalty__list">
+                            <li class="list__item">15% off welcome offer</li>
+                            <li class="list__item">free shipping, returns and exchanges on all orders</li>
+                            <li class="list__item">$10 off a purchase on your birthday</li>
+                            <li class="list__item">early access to products</li>
+                            <li class="list__item">exclusive offers & rewards</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <section class="footer__feedback">
+                <div class="footer__feedback__box container">
+                    <div class="feedback__box__item women">
+                        <img class="feedback__box__img" src="img/woomen.png" alt="woomen">
+                        <p class="feedback__box__text">“vestibulum quis porttitor dui! quisque viverra nunc mi, a
+                            pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="feedback__box__item">
+                        <h2 class="feedback__box__title">subscribe</h2>
+                        <p class="feedback__box__desc">for our newletter and promotion</p>
+                        <form>
+                            <input class="feedback__box__email" type="email" placeholder="enter yor email">
+                            <input class="feedback__box__button" type="submit" value="subscribe">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__social">
+                <div class="footer__social__item container">
+                    <p class="social__item__copy">&copy; 2021 brand all rights reserved</p>
+                    <div class="social__box">
+                        <ul>
+                            <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="img/instagram.svg" alt="instagram"></a></li>
+                            <li><a href="#"><img src="img/no_name.svg" alt="no_name"></a></li>
+                            <li><a href="#"><img src="img/twitter.svg" alt="twiter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

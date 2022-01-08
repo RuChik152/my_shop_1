@@ -1,0 +1,76 @@
+.sales {
+    @include tablet {
+        padding: 0px 11px;
+    }
+    margin-top: 65px;
+    .sales__people {
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include mobile {
+            flex-direction: column; 
+        }
+        .sales__women,
+        .sales__men,
+        .sales__kids {
+            padding: 105px 0px;
+            box-sizing: border-box;
+            background-position: center;
+            width: 31.5%;
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+
+        .sales__women {
+            background-image: url(../img/sales_for_women.jpg);
+            
+        }
+
+        .sales__men {
+            background-image: url(../img/sales_for_men.jpg);
+        }
+
+        .sales__kids {
+            background-image: url(../img/sales_for_kids.jpg);
+        }
+    }
+    .sales__accesories {
+        text-transform: uppercase;
+        margin-top: 30px;
+        padding: 65px 0px;
+        display: block;
+        background-image: url(../img/sales_for_accesories.jpg);
+        background-position: center;
+        width: 100%;
+    }
+    .sales__item {
+        transition: opacity 0.4s ease;
+
+        &:hover {
+            opacity: 0.7;
+            box-shadow: 0px 0px 23px 14px rgba(0, 0, 0, 0.24);
+        }
+        .sales__people__title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 7px;
+        }
+
+        .sales__people__subtitle {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 19px;
+            text-align: center;
+            color: #ffffff;
+            color: $colorPink;
+        }
+    }
+}

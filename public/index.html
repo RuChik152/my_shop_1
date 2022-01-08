@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--    <script defer src="js/homeWork.js"></script>-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>my shop</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="wrapper">
+        <div class="content">
+            <headers ref="headers" :menu="activeMenu"></headers>
+            <main>
+                <brand :active="isActiveMenu"></brand>
+                <sales></sales>
+                <market ref="market"></market>
+            </main>
+        </div>
+        <footers></footers>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="js/script.js"></script>
+    <script src="js/headers.js"></script>
+    <script src="js/sectionBrand.js"></script>
+    <script src="js/sectionSales.js"></script>
+    <script src="js/sectionMarket.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

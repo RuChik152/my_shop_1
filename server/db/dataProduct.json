@@ -1,0 +1,37 @@
+[
+  {
+    "id": 15,
+    "product_name" : "Розовый жакет",
+    "price": 325
+  },
+  {
+    "id": 20,
+    "product_name" : "Черное платье",
+    "price": 148
+  },
+  {
+    "id": 33,
+    "product_name" : "Белые шорты",
+    "price": 200
+  },
+  {
+    "id": 213,
+    "product_name" : "Синие шорты",
+    "price": 4000
+  },
+  {
+    "id": 453,
+    "product_name" : "Блузка",
+    "price": 55
+  },
+  {
+    "id": 99,
+    "product_name" : "Рубашка",
+    "price": 164
+  },
+  {
+    "id": 748,
+    "product_name" : "Что то другое",
+    "price": 1973
+  }
+]
