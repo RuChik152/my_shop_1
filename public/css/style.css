@@ -4,6 +4,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+main {
+  margin-top: 76px;
+}
+
 a {
   text-decoration: none;
 }
@@ -38,6 +42,9 @@ a {
 
 header {
   background-color: #222222;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 header .navbar {
