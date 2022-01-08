@@ -1,8 +1,5 @@
 header {
     background-color: $colorBlack;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
     .navbar {
         @include tablet {
             padding: 18px 32px;
