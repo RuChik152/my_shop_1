@@ -506,6 +506,7 @@ tbody {
 
 .product__item {
   position: relative;
+  cursor: default;
 }
 
 .product__item .product__item__img {
@@ -533,6 +534,7 @@ tbody {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .product__box__button .product__item__button::before {
@@ -540,6 +542,10 @@ tbody {
   content: url(../img/basket.svg);
   top: 9px;
   left: 13px;
+}
+
+.product__box__button .product__item__button:hover {
+  background: #000000;
 }
 
 .product__box__button-active {

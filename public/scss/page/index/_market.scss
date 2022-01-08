@@ -59,6 +59,7 @@
 
 .product__item {
     position: relative;
+    cursor: default;
     .product__item__img {
         transition: 0.5s ease;
         // &:hover {
@@ -119,12 +120,16 @@
         font-size: 14px;
         line-height: 17px;
         color: #ffffff;
-         &::before {
-             position: absolute;
-             content: url(../img/basket.svg);
-             top: 9px;
-             left: 13px;
-         }
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            content: url(../img/basket.svg);
+            top: 9px;
+            left: 13px;
+        }
+        &:hover{
+            background: #000000;
+        }
     }
 }
 
