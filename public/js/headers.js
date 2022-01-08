@@ -60,7 +60,7 @@ Vue.component('headers', {
                         <btn-menu @menu="menu"></btn-menu>
                         <a class="header__box__profile" href="registration.html"><img src="img/profile.png" alt="profile"></a>
                         <basket @remove="removeBasket" :isshow="isshow" :cart="usercart"></basket>
-                        <a class="header__box__basket" href="#" data-basket="0" @click="showCart"><img src="img/basket.png" alt="basket"></a>
+                        <a class="header__box__basket" href="#" data-basket="0" @click.prevent="showCart"><img src="img/basket.png" alt="basket"></a>
                     </div>
                 </div>
             </header>`
