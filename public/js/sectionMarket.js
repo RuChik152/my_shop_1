@@ -8,6 +8,10 @@ Vue.component('market', {
      }
    },
    methods: {
+       fiterUserProduct(item){
+           let regexp = new RegExp(item, 'i');
+           this.product = this.filters.filter(item => regexp.test(item.product_name));
+       },
       showAddblock(event){
          event.currentTarget.children[1].style.display = 'block';
       },

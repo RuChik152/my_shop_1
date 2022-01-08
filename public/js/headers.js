@@ -51,8 +51,8 @@ Vue.component('headers', {
                     <div class="navbar__box">
                     
                         <a class="navbar__box__logo navbar__box__item" href="index.html"><img src="img/logo.png" alt="logo"></a>
-                        <form action="/" @submit.prevent="$parent.filterProduct">
-                            <input type="text" class="search_input" v-model="$parent.userSerach">
+                        <form action="/" @submit.prevent="$root.$refs.market.fiterUserProduct(userSerach)">
+                            <input type="text" class="search_input" v-model="userSerach">
                             <button type="submit" class="search_button"><img src="img/search.png" alt="search"></button>
                         </form>                     
                     </div>
@@ -60,7 +60,7 @@ Vue.component('headers', {
                         <btn-menu @menu="menu"></btn-menu>
                         <a class="header__box__profile" href="registration.html"><img src="img/profile.png" alt="profile"></a>
                         <basket @remove="removeBasket" :isshow="isshow" :cart="usercart"></basket>
-                        <a class="header__box__basket" href="#" data-basket="0" @click="showCart"><img src="img/basket.png" alt="basket"></a>
+                        <a class="header__box__basket" href="#" data-basket="0" @click.prevent="showCart"><img src="img/basket.png" alt="basket"></a>
                     </div>
                 </div>
             </header>`
